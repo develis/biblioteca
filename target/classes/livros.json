@@ -1,0 +1,195 @@
+[
+  {
+    "id": 100,
+    "ano_publicacao": 2000,
+    "titulo": "Engenharia de Software",
+    "editora": "AddisonWe sley",
+    "edicao": 6,
+    "autores": ["Ian Sommervile"],
+    "reservas": [
+      {
+        "id_usuario": 1,
+        "exemplar": {
+          "id": 2,
+          "id_livro": 101,
+          "titulo": "UML - Guia do Usuário",
+          "emprestado": true
+        },
+        "status": "EM_ANDAMENTO",
+        "data_reserva": "2022-12-04"
+      }
+    ],
+    "emprestimos": [
+      {
+        "id_usuario": 1,
+        "titulo": "Engenharia de Software",
+        "data_devolucao": "2022-12-04",
+        "data_emprestimo": "2022-12-04",
+        "exemplar": {
+          "id": 1,
+          "id_livro": 100,
+          "titulo": "Engenharia de Software",
+          "emprestado": true
+        },
+        "status": "EM_ANDAMENTO"
+      }
+    ],
+    "exemplares": [
+      {
+        "id": 1,
+        "emprestado": false
+      },
+      {
+        "id": 2,
+        "emprestado": false
+      }
+    ]
+  },
+  {
+    "codigo": 2,
+    "id": 101,
+    "ano_publicacao": 2000,
+    "titulo": "UML - Guia do Usuário",
+    "editora": "Campus",
+    "edicao": 7,
+    "autores": ["Grady Booch", "James Rumbaugh", "Ivar Jacobson"],
+    "reservas": [],
+    "emprestimos": [],
+    "exemplares": [
+      {
+        "id": 1,
+        "emprestado": false
+      },
+      {
+        "id": 2,
+        "emprestado": false
+      }
+    ]
+  },
+  {
+    "codigo": 3,
+    "id": 200,
+    "ano_publicacao": 2014,
+    "titulo": "Code Complete",
+    "editora": "Microsoft Press",
+    "edicao": 2,
+    "autores": ["Steve McConnell"],
+    "reservas": [],
+    "emprestimos": [],
+    "exemplares": [
+      {
+        "id": 1,
+        "emprestado": false
+      },
+      {
+        "id": 2,
+        "emprestado": false
+      }
+    ]
+  },
+  {
+    "codigo": 4,
+    "id": 201,
+    "ano_publicacao": 2002,
+    "titulo": "Agile Software Development, Principles, Patterns, and Practices",
+    "editora": "Prentice Hall",
+    "edicao": 1,
+    "autores": ["Robert Martin"],
+    "reservas": [],
+    "emprestimos": [],
+    "exemplares": [
+      {
+        "id": 1,
+        "emprestado": false
+      },
+      {
+        "id": 2,
+        "emprestado": false
+      }
+    ]
+  },
+  {
+    "codigo": 5,
+    "id": 300,
+    "ano_publicacao": 1999,
+    "titulo": "Refactoring: Improving the Design of Existing Code",
+    "editora": "Addison- Wesley Professional",
+    "edicao": 1,
+    "autores": ["Martin Fowler"],
+    "reservas": [],
+    "emprestimos": [],
+    "exemplares": [
+      {
+        "id": 1,
+        "emprestado": false
+      },
+      {
+        "id": 2,
+        "emprestado": false
+      }
+    ]
+  },
+  {
+    "codigo": 6,
+    "id": 301,
+    "ano_publicacao": 2014,
+    "titulo": "Software Metrics: A Rigorous and Practical Approach",
+    "editora": "CRC Press",
+    "edicao": 3,
+    "autores": ["Norman Fenton", "James Bieman"],
+    "reservas": [],
+    "emprestimos": [],
+    "exemplares": [
+      {
+        "id": 1,
+        "emprestado": false
+      },
+      {
+        "id": 2,
+        "emprestado": false
+      }
+    ]
+  },
+  {
+    "codigo": 7,
+    "id": 400,
+    "ano_publicacao": 1994,
+    "titulo": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "editora": "Addison- Wesley Professional",
+    "edicao": 1,
+    "autores": ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"],
+    "reservas": [],
+    "emprestimos": [],
+    "exemplares": [
+      {
+        "id": 1,
+        "emprestado": false
+      },
+      {
+        "id": 2,
+        "emprestado": false
+      }
+    ]
+  },
+  {
+    "codigo": 8,
+    "id": 401,
+    "ano_publicacao": 2003,
+    "titulo": "UML Distilled: A Brief Guide to the Standard Object Modeling Language",
+    "editora": "Addison- Wesley Professional",
+    "edicao": 3,
+    "autores": ["Martin Fowler"],
+    "reservas": [],
+    "emprestimos": [],
+    "exemplares": [
+      {
+        "id": 1,
+        "emprestado": false
+      },
+      {
+        "id": 2,
+        "emprestado": false
+      }
+    ]
+  }
+]

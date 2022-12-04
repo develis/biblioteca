@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nome": "Elis",
+    "tempo_emprestimo": 0,
+    "limite_livros": 0,
+    "reservas": [
+      {
+        "id_usuario": 1,
+        "exemplar": {
+          "id": 2,
+          "id_livro": 101,
+          "titulo": "UML - Guia do Usuário",
+          "emprestado": true
+        },
+        "status": "EM_ANDAMENTO",
+        "data_reserva": "2022-12-04"
+      }
+    ],
+    "emprestimos": [
+      {
+        "id_usuario": 1,
+        "titulo": "Engenharia de Software",
+        "data_devolucao": "2022-12-04",
+        "data_emprestimo": "2022-12-04",
+        "exemplar": {
+          "id": 1,
+          "id_livro": 100,
+          "titulo": "Engenharia de Software",
+          "emprestado": true
+        },
+        "status": "EM_ANDAMENTO"
+      }
+    ],
+    "devolucoes": []
+  }
+]
