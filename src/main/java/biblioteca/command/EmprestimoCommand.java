@@ -1,8 +1,15 @@
 package biblioteca.command;
 
+import java.util.Date;
+
 import biblioteca.BibliotecaDAOImpl;
 import biblioteca.UsuarioDAOImpl;
+import biblioteca.model.Emprestimo;
+import biblioteca.model.Exemplar;
 import biblioteca.model.Livro;
+import biblioteca.model.Reserva;
+import biblioteca.model.Status;
+import biblioteca.model.Usuario;
 
 /*
 O sistema deve permitir o empréstimo de livros. Durante o empréstimo, o usuário informará o comando “emp” seguido do código do usuário e do código do
@@ -30,9 +37,65 @@ public class EmprestimoCommand extends Command{
 
     @Override
     public boolean execute() {
+        Exemplar exemplar = new Exemplar();
         Long id_usuario = Long.valueOf(splitCommand()[1]);
         Integer id_livro = Integer.valueOf(splitCommand()[2]);
 
-        return false;
+        Usuario usuario = usuarioDAO.findById(id_usuario);
+        Livro livro = bibliotecaDAO.findLivroById(id_livro);
+
+        if (!livro.getExemplaresDisponiveis().isEmpty()) {
+            exemplar = finalizarReservaUsuario(usuario, id_livro);
+            finalizarReservaLivro(livro, id_livro);
+        }
+
+        if (exemplar.getId_livro() == null) {
+            Exemplar exemplarDisponivel = livro.getExemplaresDisponiveis().get(0);
+
+            exemplar.setId(exemplarDisponivel.getId());
+            exemplar.setId_livro(exemplarDisponivel.getId_livro());
+            exemplar.setEmprestado(true);
+            exemplar.setTitulo(exemplarDisponivel.getTitulo());
+
+            exemplarDisponivel.setEmprestado(true);
+        }
+
+        Emprestimo emprestimo = new Emprestimo(id_usuario, exemplar, new Date());
+        Date data_devolucao = new Date(System.currentTimeMillis() + (usuario.getTempo_emprestimo() * 86400000));
+
+        emprestimo.setData_devolucao(data_devolucao);
+
+        usuario.addEmprestimo(emprestimo);
+        livro.addEmprestimo(emprestimo);
+
+        return true;
+    }
+
+    private Exemplar finalizarReservaUsuario(Usuario usuario, Integer id_livro) {
+        for (Reserva reserva: usuario.getReservas()) {
+            if (reserva.getExemplar().getId_livro().intValue() == id_livro) {
+                usuario.getReservas().get(usuario.getReservas().indexOf(reserva)).setStatus(Status.FINALIZADO);
+                return usuario.getReservas().get(usuario.getReservas().indexOf(reserva)).getExemplar();
+            }
+        }
+        return new Exemplar();
+    }
+
+    private Exemplar finalizarReservaLivro(Livro livro, Integer id_livro) {
+        for (Reserva reserva: livro.getReservas()) {
+            if (reserva.getExemplar().getId_livro().intValue() == id_livro) {
+                livro.getReservas().get(livro.getReservas().indexOf(reserva)).setStatus(Status.FINALIZADO);
+                return livro.getReservas().get(livro.getReservas().indexOf(reserva)).getExemplar();
+            }
+        }
+
+        return new Exemplar();
+    }
+
+    public static void main(String[] args) {
+        UsuarioDAOImpl dao = new UsuarioDAOImpl();
+        EmprestimoCommand command = new EmprestimoCommand(new BibliotecaDAOImpl(), dao, "emp 1 101");
+        command.execute();
+        System.out.println(dao.findById(1L).getEmprestimos().get(1).getExemplar().getTitulo());
     }
 }

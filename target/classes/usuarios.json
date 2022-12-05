@@ -2,8 +2,8 @@
   {
     "id": 1,
     "nome": "Elis",
-    "tempo_emprestimo": 0,
-    "limite_livros": 0,
+    "tempo_emprestimo": 3,
+    "limite_livros": 3,
     "reservas": [
       {
         "id_usuario": 1,

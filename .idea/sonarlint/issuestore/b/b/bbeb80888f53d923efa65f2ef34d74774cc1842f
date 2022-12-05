@@ -1,0 +1,13 @@
+
+m
+java:S1104"RMake livros a static final constant or non-public and provide accessors if needed.(ƒ×ıïûÿÿÿÿ
+G
+java:S1444",Make this "public static livros" field final(ƒ×ıïûÿÿÿÿ
+8
+java:S2386"Make this member "protected".(ƒ×ıïûÿÿÿÿ
+W
+java:S1118":Add a private constructor to hide the implicit public one.(â˜8®ª ÜÍ0
+X
+java:S1128"6Remove this unused import 'biblioteca.model.Exemplar'.(¡Ğ¿½ıÿÿÿÿ8ËŸÜÍ0
+W
+java:S1128"5Remove this unused import 'biblioteca.model.Reserva'.(óíŒÔúÿÿÿÿ8µª ÜÍ0

@@ -19,6 +19,17 @@ public class Livro {
         return exemplares;
     }
 
+    public List<Exemplar> getExemplaresDisponiveis() {
+        List<Exemplar> exemplaresDisponiveis = new ArrayList<>();
+        for (Exemplar exemplar: exemplares) {
+            if (!exemplar.isEmprestado()) {
+                exemplaresDisponiveis.add(exemplar);
+            }
+        }
+
+        return exemplaresDisponiveis;
+    }
+
     public void setExemplares(final List<Exemplar> exemplares) {
         this.exemplares = exemplares;
     }

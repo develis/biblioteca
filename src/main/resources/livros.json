@@ -37,10 +37,14 @@
     "exemplares": [
       {
         "id": 1,
-        "emprestado": false
+        "id_livro": 100,
+        "titulo": "Engenharia de Software",
+        "emprestado": true
       },
       {
         "id": 2,
+        "id_livro": 100,
+        "titulo": "Engenharia de Software",
         "emprestado": false
       }
     ]
@@ -58,10 +62,14 @@
     "exemplares": [
       {
         "id": 1,
+        "id_livro": 101,
+        "titulo": "UML - Guia do Usuário",
         "emprestado": false
       },
       {
         "id": 2,
+        "id_livro": 101,
+        "titulo": "UML - Guia do Usuário",
         "emprestado": false
       }
     ]

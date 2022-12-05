@@ -10,6 +10,13 @@ public class Emprestimo {
     private Date data_emprestimo;
     private Status status;
 
+    public Emprestimo(final Long id_usuario, final Exemplar exemplar, final Date data_emprestimo) {
+        this.id_usuario = id_usuario;
+        this.exemplar = exemplar;
+        this.data_emprestimo = data_emprestimo;
+        this.status = Status.EM_ANDAMENTO;
+    }
+
     public Exemplar getExemplar() {
         return exemplar;
     }
