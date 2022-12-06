@@ -1,0 +1,11 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©¾ŠÉ8‹ùúÛÍ0
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¬¢”÷
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¾˜ê¢ùÿÿÿÿ
+[
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(½¼ìÜ8­“±ÜÍ0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÔŠ¦¦þÿÿÿÿ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(öÿ“¿
+M	java:S106%"9Replace this use of System.out or System.err by a logger.(˜Î¨R
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(åÅê‡
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(ê•‹˜

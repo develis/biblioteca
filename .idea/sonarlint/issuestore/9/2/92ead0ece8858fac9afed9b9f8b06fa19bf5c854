@@ -1,0 +1,18 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”Àé¢úÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù´½Íÿÿÿÿÿ
+f	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è£ÂÄ
+k	java:S117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†³öùýÿÿÿÿ
+f	java:S117W"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÊÄþ
+W
+java:S4973|"<Strings and Boxed types should be compared using "equals()".(Â÷„€øÿÿÿÿ
+O
+java:S3516"9Refactor this method to not always return the same value.(š¢ÆÝ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(·Ð‘©þÿÿÿÿ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(’­Ì¡
+S	java:S106("9Replace this use of System.out or System.err by a logger.(·Ð‘©þÿÿÿÿ
+W
+java:S1126c"AReplace this if-then-else statement by a single return statement.(µÔñ£
+S	java:S106}"9Replace this use of System.out or System.err by a logger.(îÝÄÞúÿÿÿÿ
+T	java:S106‡"9Replace this use of System.out or System.err by a logger.(ñî¥Æûÿÿÿÿ
+T	java:S106‘"9Replace this use of System.out or System.err by a logger.(èðèýÿÿÿÿ

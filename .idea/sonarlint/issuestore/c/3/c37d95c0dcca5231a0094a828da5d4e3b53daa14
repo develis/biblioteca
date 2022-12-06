@@ -1,0 +1,16 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê‘…®
+k	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÁ±ûÿÿÿÿ
+f	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö‡û¸
+o	java:S116"URename this field "id_usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´÷¦Ëûÿÿÿÿ
+n	java:S116	"YRename this field "data_devolucao" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÓÌÄ
+n	java:S116
+"ZRename this field "data_emprestimo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¬İ}
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É•™ä
+h	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÁ±ûÿÿÿÿ
+h	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤•«Šùÿÿÿÿ
+h	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷­î•ÿÿÿÿÿ
+c	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëªäÈ
+c	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö‡û¸
+K
+java:S1128"5Remove this unused import 'java.time.OffsetDateTime'.(ûùˆı

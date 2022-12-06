@@ -2,8 +2,9 @@
   {
     "id": 1,
     "nome": "Elis",
-    "tempo_emprestimo": 3,
-    "limite_livros": 3,
+    "tempo_emprestimo": 1,
+    "limite_livros": 1,
+    "hierarquia": "GRAD",
     "reservas": [
       {
         "id_usuario": 1,
@@ -21,8 +22,8 @@
       {
         "id_usuario": 1,
         "titulo": "Engenharia de Software",
-        "data_devolucao": "2022-12-04",
-        "data_emprestimo": "2022-12-04",
+        "data_devolucao": "2022-12-06",
+        "data_emprestimo": "2022-12-06",
         "exemplar": {
           "id": 1,
           "id_livro": 100,
